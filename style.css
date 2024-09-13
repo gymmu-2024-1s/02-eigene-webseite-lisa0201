@@ -35,3 +35,7 @@ body {
 .my-list li {
     margin: 2rem;
 }
+
+.bigger {
+    font-size: 2rem;
+}
