@@ -16,8 +16,80 @@
             <!-- Im header wird der Kopf der Webseite angegeben.
             Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
             ganz oben angezeigt wird, braucht es noch das richtige CSS dafür. -->
-            <h1>Webseite von ...</h1>
-        </header>
+
+           <h1>Webseite über Lisa Waser</h1>
+
+           <svg width="100" height="100">
+            <defs> 
+                <linearGradient id="grad1">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="100%" stop-color="red" /> 
+                </linearGradient>
+            </defs>
+            <circle 
+            cx="50"
+            cy="50"
+            r="60"
+            stroke="pink"
+            stroke-width="4"
+            fill="white"
+            >
+
+            <animate 
+                attributeName="r"
+                from="35" 
+                to="40"
+                dur="0.5s"
+                begin="0"
+                repeatCount="indefinite"
+                values="40;35;40"
+                />
+                
+                <animate 
+                    attributeName="fill"
+                    from="yellow;red;yellow" 
+                    dur="2s"
+                    begin="0"
+                    repeatCount="indefinite"
+                    />
+            </circle>
+            <ellipse 
+            cx="50" 
+            cy="50"
+            rx="30"
+            ry="30" 
+            fill="url(#grad1)"
+            />
+            <text
+            fill="yellow"
+            font-size="24"
+            font-family="batang"
+            x="28"
+            y="59"
+        >
+            Lisa
+        </text>
+        <path d="M 20 50 Q 50 20,80 50 Q 50 80, 20 50"
+             fill="none"
+            stroke="yellow" 
+            stroke-width="2"
+             />
+           </svg>
+           <div>
+        
+
+            </defs>
+
+
+           </svg>
+
+
+           </svg>
+
+           
+            </svg>
+            <div>
+            
 
         <nav>
             <!-- Das Navigations-Element beinhaltet eine Liste von Links, mit
@@ -29,6 +101,9 @@
                 <li>
                     <a href="./pages/hobbies.html">Hobbies</a>
                 </li>
+                <li>
+                    <a href="./pages/zukunftsplaene.html">Zukunftspläne</a>
+                </li>
             </ul>
         </nav>
 
@@ -37,43 +112,57 @@
             anzeigen möchten. Dieser ist meistens in Section-Elemente
             unterteilt. -->
 
-            <section>
+            <section class="font-1">
                 <!-- Dieses Element wird verwendet um einen Abschnitt auf der
                 Webseite vom Rest abzutrennen. Für Abschnitte in einem Text
                 verwendet man das p-Element. -->
-                <h2>Erster Abschnitt</h2>
+                <header class="bg-text">
+                <h2>Das bin ich...</h2> 
+
                 <p>
                     <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
                     ein. Das p-Element hat meistens nur noch Text, Links oder
                     Bilder drin, sonst keine weiteren Elemente. -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-                    itaque eaque vel necessitatibus amet consectetur corrupti
-                    repudiandae ipsam aliquam sint.
+                    Ich heisse Lisa und bin 16 Jahre alt gewotrden in den
+                    Sommeferien. Ich bin in der Schweiz geboren, aufgewachsen
+                    und ich wohne hier. Ich bin an einer weiterführenden Schule
+                    mit dem Schwerpunkt Spanisch.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                    natus magni non cumque voluptatum similique ullam
-                    temporibus. Magni sequi sunt temporibus ab a nobis quo non,
-                    molestias sapiente dolorum repellendus obcaecati odit, dolor
-                    quae illo ratione, veniam autem id praesentium. Consectetur,
-                    totam asperiores expedita culpa doloribus nesciunt error
-                    architecto dolorum!
-                </p>
+                    Meine Familie besteht aus meiner Mutter, meiner älteren 
+                    Schwester und meiner Grossmutter. Ich besitze eine Katze die
+                    heisst Balu und ich hatte noch eine Katze, die ist aber vor
+                    ein paar jahren gestorben, er hiess Tiggy. Meine Mutter
+                    kommt ursprünglich aus der Ukraine. Als ich kleinber war,
+                    verbrang ich jeden Sommer in der Ukraine bei meiner Familie.
+                    Daher ist meine 2.Muttersprach Russisch. Wir waren immer in
+                    den gleichen Städten. Zuerst in der Haupstadt Kiew und
+                    dannach in die Heimatstadt Saporoschje. In Oblast Saporoschje
+                    sind wir dann nach Berdyanks gefahren ans Meer. Seitdem
+                    Krieg bin icht nicht mehr in die Ukraine gegangen.
+                </p> </header>
             </section>
+        
+                </a>
+                </a>
+            
+            
+            </a>
 
             <section>
-                <h2>Abschnitt mit Text und Bild</h2>
+                <h2>Ukrainische Flagge</h2>
                 <div class="text-and-img">
                     <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
                     Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
                     verwendet, damit wir den Effekt von einem Text neben einem Bild
                     einfach hinbekommen können. -->
                     <div class="text">
-                        Hier ist eine Beschreibung von dem Bild, oder einfach
-                        Text der dazu passen könnte.
+                    
                     </div>
                     <div class="image">
-                        <img src="/img/mountains.png" alt="" />
+                        <img
+                            src="https://www.wagrati.eu/media/images/flagge-ukraine-2000x1333.jpg"
+                        />
                     </div>
                 </div>
             </section>

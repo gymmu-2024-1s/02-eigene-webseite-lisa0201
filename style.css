@@ -7,10 +7,13 @@
 /* Hier können Stiele für die ganze Webseite angegeben werden. */
 body {
     margin: 0;
+    color: hotpink;
 }
-
-/* Hier werden 2 Elemente nebeneinander gepackt.
-   Mit `display: flex;` können wir angeben in welche Richtung alle Kinder von
+body {
+    margin: 0;
+    background-color: lavenderblush;
+}
+/*Mit `display: flex;` können wir angeben in welche Richtung alle Kinder von
    einem Element ausgerichtet werden. Wählen wir `flex-direction: row`, dann
    werden Sie alle mit gleich viel Platz in einer Reihe nebeneinander platziert.
    Mit `flex-direction: column` werden Sie untereinander platziert. Das reicht
@@ -29,4 +32,24 @@ body {
 .text-and-img img {
     border-radius: 2rem; /* Damit können die Ecken abgerundet werden. */
     width: 100%; /* Braucht es damit das Bild im Container bleibt und nicht viel zu gross ist. */
+}
+
+.my-list li {
+    margin: 2rem;
+}
+
+.bigger {
+    font-size: 2rem;
+}
+
+.font-1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg-text {
+    text-align: center;
+    border: 5px dotted plum;
+    border: radius 2rem;
+    margin: 10px;
+    padding: 1rem;
 }
